@@ -1,17 +1,17 @@
 import React from "react";
-import { Code, Shield, Cpu, Monitor } from "lucide-react"; // Import suitable icons from lucide-react
+import { Code, Shield, Cpu, Monitor } from "lucide-react";
 
 const PersonalDetail = ({ label, value }) => (
-  <div className="flex items-center gap-8 py-2">
-    <span className="font-medium text-gray-900 w-32">{label}:</span>
+  <div className="flex items-center gap-4 py-1 text-sm sm:text-base md:text-lg">
+    <span className="font-medium text-gray-900 w-24 sm:w-32">{label}:</span>
     <span className="text-gray-600">{value}</span>
   </div>
 );
 
 const SkillBadge = ({ icon, label }) => (
-  <div className="flex flex-col items-center gap-2 p-4 rounded-lg bg-gray-100 w-24 text-blue-800">
+  <div className="flex flex-col items-center gap-2 p-3 sm:p-4 rounded-lg bg-gray-100 w-20 sm:w-24 text-blue-800">
     {icon}
-    <span className="text-sm font-medium text-blue-800">{label}</span>
+    <span className="text-xs sm:text-sm font-medium">{label}</span>
   </div>
 );
 
@@ -25,51 +25,50 @@ const AboutMe = () => {
   ];
 
   const skills = [
-    { icon: <Monitor size={32} />, label: "Web Development" },
-    { icon: <Code size={32} />, label: "Front-End" },
-    { icon: <Shield size={32} />, label: "Cybersecurity" },
-    { icon: <Cpu size={32} />, label: "Machine Learning" },
+    { icon: <Monitor size={24} className="sm:size-32" />, label: "Web Dev" },
+    { icon: <Code size={24} className="sm:size-32" />, label: "Front-End" },
+    { icon: <Shield size={24} className="sm:size-32" />, label: "Cybersecurity" },
+    { icon: <Cpu size={24} className="sm:size-32" />, label: "Machine Learning" },
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-2 py-2 mb-7">
-      <h1 className="text-3xl font-bold mb-8 font-patrick text-center">About Me</h1>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', height: '60vh', gap: '10px' }}>
-        
+    <div className="max-w-7xl mx-auto px-4 py-6">
+      <h1 className="text-2xl sm:text-3xl font-bold text-center font-patrick mb-6">About Me</h1>
+
+      <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
         {/* Left side - Image Section */}
-        <div style={{ flex: '1', maxWidth: '50%', padding: '20px', marginTop:'4' }}>
+        <div className="w-full md:w-1/2 px-4">
           <img
-            src="/june.jpg"  // Replace with the actual image path or URL
-            alt="About Me Image"
-            style={{ width: '100%', height: '50vh', borderRadius: '8px' }}  // Adjust as needed
+            src="/june.jpg"
+            alt="About Me"
+            className="w-full max-h-60 sm:max-h-72 object-cover rounded-lg"
           />
         </div>
 
         {/* Right side - Skills and Additional Content */}
-        <div style={{ flex: '1', maxWidth: '40%', textAlign: 'left', padding: '20px' }}>
-          <h2 className="text-xl font-bold mb-4">Services</h2>
-          <div className="flex flex-wrap gap-4">
+        <div className="w-full md:w-1/2 px-4 text-center md:text-left">
+          <h2 className="text-lg sm:text-xl font-bold mb-4">Services</h2>
+          <div className="flex flex-wrap justify-center md:justify-start gap-3 sm:gap-4">
             {skills.map((skill, index) => (
               <SkillBadge key={index} icon={skill.icon} label={skill.label} />
             ))}
           </div>
 
-          {/* Additional Details */}
-          <div className="space-y-4 mt-4 mb-4">
-            {/* {details.map((detail, index) => (
+          {/* Personal Details */}
+          {/* <div className="mt-4 space-y-2">
+            {details.map((detail, index) => (
               <PersonalDetail key={index} label={detail.label} value={detail.value} />
-            ))} */}
-            <p className="text-white mt-9 text-xl">
-              I am a software developer with a passion for building web applications and solving real-world problems.
-              I am proficient in front-end development using React, Next.js, and Tailwind CSS. I have experience in
-              back-end development using Node.js, Express, and PostgreSQL. I am also interested in cybersecurity and machine learning.
+            ))}
+          </div> */}
 
-              Strong proficiency in JavaScript and a thorough understanding of React.js and its core principles.
-            </p>
-          </div>
+          {/* Description */}
+          <p className="mt-6 text-sm sm:text-base text-gray-300 leading-relaxed">
+            I am a software developer with a passion for building web applications and solving real-world problems.
+            Proficient in front-end development using React, Next.js, and Tailwind CSS, as well as back-end development
+            with Node.js, Express, and PostgreSQL. I am also interested in cybersecurity and machine learning.
+          </p>
         </div>
       </div>
-      <br />
     </div>
   );
 };
