@@ -10,12 +10,12 @@ const projects = [
   {
     title: "Portfolio Website",
     description: "A personal portfolio showcasing projects, skills, and professional journey as a full-stack developer.",
-    link: "/projects/portfolio",
+    link: "https://github.com/June-Bajim/June",
   },
   {
     title: "Nyeri Online Filming Site",
     description: "A collaborative work done to allow users especially film makers to view and book sites for their films.",
-    link: "/projects/mechatronics-lab",
+    // link: "/projects/mechatronics-lab",
   },
   {
     title: "Expense Tracker",
@@ -23,6 +23,11 @@ const projects = [
     link: "https://github.com/June-Bajim/expenses-tracker",
   },
 
+  {
+    title: "Social Media Dahboard",
+    description: "A Social Media Dashboard for Tech Trends is a web application built with Next.js (frontend) and Node.js (backend) to track and visualize the latest trends in the tech industry.",
+    link: "https://github.com/June-Bajim/Social_media-dashbord",
+  },
 ];
 
 const ProjectsSection = () => {
