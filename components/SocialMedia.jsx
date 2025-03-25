@@ -26,7 +26,7 @@ const SocialMedia = () => {
   ];
 
   return (
-    <div style={{ writingMode: "vertical-rl" }} className="flex gap-8">
+    <div className="flex flex-row md:flex-col gap-4 md:gap-8 items-center justify-center">
       {socialLinks.map((social, index) => (
         <a
           key={index}

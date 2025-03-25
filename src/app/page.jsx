@@ -25,40 +25,47 @@ const LandingPage = () => {
         <div className="flex justify-center items-center mx-auto">
           <div className="h w-full">
             {/* Navigation */}
-            <nav className="fixed top-0 w-full backdrop-blur-sm z-50">
-              <div className="max-w-8xl mx-auto px-4 sm:px-4 lg:px-8">
-                <div className="flex justify-between h-16 items-center">
-                  <div className="text-2xl font-patrick font-bold text-blue"></div>
+           {/* Navigation */}
+      {/* Navigation */}
+{/* Navigation */}
+<nav className="fixed top-0 w-full backdrop-blur-sm z-50 h-12 md:h-16">
+  <div className="max-w-8xl mx-auto px-2 sm:px-4 lg:px-8">
+    <div className="flex justify-between h-12 md:h-16 items-center">
+      <div className="text-xl md:text-2xl font-patrick font-bold text-blue"></div>
 
-                  {/* Hamburger Menu */}
-                  <div className="md:hidden">
-                    <button
-                      onClick={() => setMenuOpen(!menuOpen)}
-                      className="text-white focus:outline-none"
-                    >
-                      ☰
-                    </button>
-                  </div>
+      {/* Hamburger Menu */}
+      <div className="md:hidden">
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="text-white focus:outline-none"
+        >
+          ☰
+        </button>
+      </div>
 
-                  {/* Navigation Items */}
-                  <div
-                    className={`absolute md:relative top-16 left-0 w-full md:w-auto bg-black md:bg-transparent transition-all duration-300 ${
-                      menuOpen ? "block" : "hidden md:flex"
-                    }`}
-                  >
-                    {navItems.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.path}
-                        className="block md:inline-block text-white py-2 px-4 md:px-6 hover:text-blue transition-colors font-patrick font-bold"
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </nav>
+      {/* Navigation Items */}
+      <div
+        className={`fixed inset-0 top-0 w-full h-screen bg-black/50 backdrop-blur-sm flex flex-col items-center justify-center transition-transform ${
+          menuOpen ? "translate-y-0" : "-translate-y-full"
+        } md:relative md:flex-row md:h-auto md:backdrop-blur-none md:bg-transparent md:translate-y-0`}
+      >
+        {navItems.map((item) => (
+          <a
+            key={item.name}
+            href={item.path}
+            className="text-white text-lg py-4 md:py-2 px-6 hover:text-blue transition-colors font-patrick font-bold"
+            onClick={() => setMenuOpen(false)} // ✅ Closes menu on click
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
 
             {/* Hero Section */}
             <div className="relative min-h-screen flex flex-col md:flex-row items-center text-center md:text-left mx-auto">
@@ -66,14 +73,14 @@ const LandingPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
                   {/* Left Section - Text Content */}
                   <div className="space-y-4">
-                    <div className="bg-gray tracking-wider font-patrick text-xl">
+                    <div className="bg-gray tracking-wider font-patrick text-xl mt-12">
                       Hello, I&apos;m
                     </div>
                     <h1 className="text-4xl md:text-6xl font-patrick tracking-loose">
                       June <br /> Jebiwott,
                     </h1>
                     <h2 className="text-2xl md:text-3xl font-patrick leading-tight font-courier">
-                      I&apos;m a{" "}
+                       A{" "}
                       <span className="text-green-600">Software Developer</span>
                       <span className="text-white">.</span>
                     </h2>
