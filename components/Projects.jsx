@@ -3,29 +3,40 @@ import React from 'react';
 
 const projects = [
   {
+    title: "Virtual Mechatronics Labs Website",
+    description: " This platform serves as a central hub showcasing the lab's innovative projects in virtual reality, robotics, AI, and mechatronics. Key features include interactive 3D models, an integrated e-commerce section for mechatronic devices, and detailed information on research initiatives and collaborations. The website aims to promote VML's work, facilitate product sales, and provide an engaging user experience through cutting-edge technology",
+    link: "https://vml.dkut.ac.ke/",
+  },
+  {
+    title: "Virtual Mechatronics Labs ERP System",
+    description: "The VML ERP System is a centralized platform designed to streamline and manage the core operations of the Virtual Mechatronics Lab. It enables administrators to efficiently oversee and coordinate staff, students, projects, and equipment from a single, secure interface. The system is accessible to all registered users, including staff, students, and equipment interfaces, ensuring seamless collaboration and real-time updates",
+    link: "https://vmlab.dkut.ac.ke/",
+  },
+  {
     title: "Sentiment Analysis Model",
-    description: "An AI-powered sentiment analysis model and website that analyzes text data to determine sentiment polarity.",
+    description: "This project features an AI-driven sentiment analysis model integrated into a responsive website interface. The system processes user-inputted text to determine the sentiment polarity—classifying it as positive, negative, or neutral. Built using machine learning and natural language processing (NLP) techniques, the model was trained on labeled text data to accurately detect emotional tone in real-time.",
     link: "https://github.com/June-Bajim/sentiment_Analysis_project",
   },
-  {
-    title: "Portfolio Website",
-    description: "A personal portfolio showcasing projects, skills, and professional journey as a full-stack developer.",
-    link: "https://github.com/June-Bajim/June",
-  },
+
+  // {
+  //   title: "Portfolio Website",
+  //   description: "A personal portfolio showcasing projects, skills, and professional journey as a full-stack developer.",
+  //   link: "https://github.com/June-Bajim/June",
+  // },
   {
     title: "Nyeri Online Filming Site",
-    description: "A collaborative work done to allow users especially film makers to view and book sites for their films.",
+    description: "This collaborative project was developed to assist filmmakers and content creators in discovering and reserving ideal shooting locations. The platform allows users to browse, view details, and book filming sites through a user-friendly interface. Designed with both functionality and accessibility in mind, the system simplifies the process of site selection and booking.",
     // link: "/projects/mechatronics-lab",
   },
   {
     title: "Expense Tracker",
-    description: "A simple expense tracker for users to track how they spend their income.",
+    description: "This is a user-friendly web application designed to help individuals track their income and expenses, promoting better financial management. Users can log daily transactions, categorize spending, and monitor their balance over time through a clean and intuitive dashboard.",
     link: "https://github.com/June-Bajim/expenses-tracker",
   },
 
   {
     title: "Social Media Dahboard",
-    description: "A Social Media Dashboard for Tech Trends is a web application built with Next.js (frontend) and Node.js (backend) to track and visualize the latest trends in the tech industry.",
+    description: "This is a full-stack web application developed using Next.js for the frontend and Node.js for the backend, designed to track and visualize the latest technology trends across major social media platforms. The dashboard aggregates and displays real-time data, offering users a centralized view of trending topics in the tech industry.",
     link: "https://github.com/June-Bajim/Social_media-dashbord",
   },
 ];

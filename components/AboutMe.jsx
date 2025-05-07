@@ -34,7 +34,10 @@ const AboutMe = () => {
         <div className="w-full md:w-1/2 px-4 text-center md:text-left">
           {/* Description */}
           <p className="text-sm sm:text-base text-gray-300 leading-relaxed text-justify">
-          I am a passionate software developer dedicated to building dynamic web applications and solving real-world challenges. With expertise in front-end development using React, Next.js, and Tailwind CSS, and back-end development with Node.js, Express, and PostgreSQL, I create seamless, high-performance solutions. Additionally, I have intermediate proficiency in cybersecurity and machine learning, allowing me to build secure and intelligent applications.
+          I am a passionate software developer dedicated to building dynamic web applications and solving real-world challenges. 
+          With expertise in front-end development using React, Next.js, and Tailwind CSS, and back-end development with Node.js, 
+          Express, and PostgreSQL, I create seamless, high-performance solutions. Additionally, I have intermediate proficiency in 
+          cybersecurity and machine learning, allowing me to build secure and intelligent applications.
           </p>
 
           {/* Skills */}
