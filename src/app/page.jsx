@@ -99,7 +99,7 @@ const LandingPage = () => {
                   <div className="flex justify-center">
                     <div className="w-60 md:w-80 aspect-square bg-gray-200 rounded-full overflow-hidden">
                       <Image
-                        src="/june.jpg"
+                        src="/PIC 2.JPG"
                         alt="Professional portrait"
                         className="w-full h-full object-cover"
                         width={600}
