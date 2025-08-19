@@ -81,13 +81,13 @@ const LandingPage = () => {
                     </h1>
                     <h2 className="text-2xl md:text-3xl font-patrick leading-tight font-courier">
                        A{" "}
-                      <span className="text-green-600">Software Developer</span>
+                      <span className="text-blue-800">Software Developer</span>
                       <span className="text-white">.</span>
                     </h2>
 
                     {/* Buttons */}
                     <div className="flex justify-center md:justify-start space-x-4 pt-2">
-                      <a href="/CV.docx">
+                      <a href="/cv.pdf">
                         <button className="border-2 border-blue px-6 py-3 rounded hover:bg-blue hover:text-white transition-colors font-patrick font-bold">
                           Download CV
                         </button>
