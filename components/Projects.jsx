@@ -10,7 +10,7 @@ const projects = [
   {
     title: "Virtual Mechatronics Labs ERP System",
     description: "The VML ERP System is a centralized platform designed to streamline and manage the core operations of the Virtual Mechatronics Lab. It enables administrators to efficiently oversee and coordinate staff, students, projects, and equipment from a single, secure interface. The system is accessible to all registered users, including staff, students, and equipment interfaces, ensuring seamless collaboration and real-time updates",
-    link: "https://vmlab.dkut.ac.ke/",
+    link: "https://vml-erp.dkut.ac.ke/",
   },
   {
     title: "Sentiment Analysis Model",
