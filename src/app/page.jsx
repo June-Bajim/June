@@ -87,7 +87,7 @@ const LandingPage = () => {
 
                     {/* Buttons */}
                     <div className="flex justify-center md:justify-start space-x-4 pt-2">
-                      <a href="/cv.pdf">
+                      <a href="/CV.pdf">
                         <button className="border-2 border-blue px-6 py-3 rounded hover:bg-blue hover:text-white transition-colors font-patrick font-bold">
                           Download CV
                         </button>

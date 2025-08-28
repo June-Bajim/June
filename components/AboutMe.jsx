@@ -24,7 +24,7 @@ const AboutMe = () => {
         {/* Left side - Image Section */}
         <div className="w-full md:w-1/2 px-4">
           <img
-            src="/PIC 2.JPG"
+            src="/about.JPG"
             alt="About Me"
             className="w-full max-h-60 sm:max-h-72 object-cover rounded-lg"
           />
